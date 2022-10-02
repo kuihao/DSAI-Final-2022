@@ -26,7 +26,9 @@ point_of_interest - An identifier for the POI the entry represents. There may be
 * pairs.csv - A pregenerated set of pairs of place entries from train.csv designed to improve detection of matches. You may wish to generate additional pairs to improve your model's ability to discriminate POIs.
 match - Whether (True or False) the pair of entries describes a common POI.
 ## MY Strategy
-Refer to the discussion forum for a [simple data cleaning code](https://www.kaggle.com/code/guoyonfan/simple-recall-method) and use [LightGBM](https://github.com/microsoft/LightGBM/tree/master/python-package) to further predict POI.
+* analysis and process input data
+ * 
+* Refer to the discussion forum for a [simple data cleaning code](https://www.kaggle.com/code/guoyonfan/simple-recall-method) and use [LightGBM](https://github.com/microsoft/LightGBM/tree/master/python-package) to further predict POI.
 ## Result
 Although the class rankings are not publicly available, I got a score of **0.83880** on the [kaggle Leaderboard (search: **Kuihao Chang**)](https://www.kaggle.com/competitions/foursquare-location-matching/leaderboard)
 It may not look like a high ranking now, but the competition was not over when the final project was submitted, and my code was ranked 139 at the time.
