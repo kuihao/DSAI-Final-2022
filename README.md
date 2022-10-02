@@ -27,8 +27,11 @@ point_of_interest - An identifier for the POI the entry represents. There may be
 match - Whether (True or False) the pair of entries describes a common POI.
 ## MY Strategy
 * analysis and process input data
- * 
-* Refer to the discussion forum for a [simple data cleaning code](https://www.kaggle.com/code/guoyonfan/simple-recall-method) and use [LightGBM](https://github.com/microsoft/LightGBM/tree/master/python-package) to further predict POI.
+    * <img src="img/DSAI_input_analysis.png" height="50%" width="50%">
+    * <img src="img/DSAI_input_analysis2.png" height="50%" width="50%">
+    * <img src="img/DSAI_input_analysis3.png" height="50%" width="50%">
+* Refer to the discussion forum for a [simple data cleaning code](https://www.kaggle.com/code/guoyonfan/simple-recall-method) and use [**LightGBM**](https://github.com/microsoft/LightGBM/tree/master/python-package) to further predict POI.
+    * <img src="img/DSAI_idea.png" height="50%" width="50%">
 ## Result
 Although the class rankings are not publicly available, I got a score of **0.83880** on the [kaggle Leaderboard (search: **Kuihao Chang**)](https://www.kaggle.com/competitions/foursquare-location-matching/leaderboard)
 It may not look like a high ranking now, but the competition was not over when the final project was submitted, and my code was ranked 139 at the time.
