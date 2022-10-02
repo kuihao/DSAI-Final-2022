@@ -20,18 +20,18 @@ The data presented here comprises over one-and-a-half million place entries for 
 **Your task is to determine which place entries describe the same point-of-interest.**
 Though the data entries may represent or resemble entries for real places, they may also contain artificial information or additional noise.
 ### Training Data
-* train.csv - The training set, comprising eleven attribute fields for over one million place entries, together with:
-* id - A unique identifier for each entry.
-point_of_interest - An identifier for the POI the entry represents. There may be one or many entries describing the same POI. Two entries "match" when they describe a common POI.
-* pairs.csv - A pregenerated set of pairs of place entries from train.csv designed to improve detection of matches. You may wish to generate additional pairs to improve your model's ability to discriminate POIs.
-match - Whether (True or False) the pair of entries describes a common POI.
+* **`train.csv`** - The training set, comprising eleven attribute fields for over one million place entries, together with:
+    * `id` - A unique identifier for each entry.
+    * `point_of_interest` - An identifier for the POI the entry represents. There may be one or many entries describing the same POI. Two entries "match" when they describe a common POI.
+* **`pairs.csv`** - A pregenerated set of pairs of place entries from `train.csv` designed to improve detection of matches. You may wish to generate additional pairs to improve your model's ability to discriminate POIs.
+    * `match` - Whether (`True` or `False`) the pair of entries describes a common POI.
 ## MY Strategy
 * analysis and process input data
     * <img src="img/DSAI_input_analysis.png" height="50%" width="50%">
     * <img src="img/DSAI_input_analysis2.png" height="50%" width="50%">
     * <img src="img/DSAI_input_analysis3.png" height="50%" width="50%">
-* Refer to the discussion forum for a [simple data cleaning code](https://www.kaggle.com/code/guoyonfan/simple-recall-method) and use [**LightGBM**](https://github.com/microsoft/LightGBM/tree/master/python-package) to further predict POI.
+* Refer to the discussion forum for a [simple data cleaning code](https://www.kaggle.com/code/guoyonfan/simple-recall-method) and use [**LightGBM**](https://github.com/microsoft/LightGBM/tree/master/python-package) and [**transformers**](https://github.com/huggingface/transformers) to further predict POI.
     * <img src="img/DSAI_idea.png" height="50%" width="50%">
 ## Result
-Although the class rankings are not publicly available, I got a score of **0.83880** on the [kaggle Leaderboard (search: **Kuihao Chang**)](https://www.kaggle.com/competitions/foursquare-location-matching/leaderboard)
-It may not look like a high ranking now, but the competition was not over when the final project was submitted, and my code was ranked 139 at the time.
+Although the class rankings are not publicly available, I got a score of **0.83880** on the [kaggle Leaderboard (search: **Kuihao Chang**)](https://www.kaggle.com/competitions/foursquare-location-matching/leaderboard)<br>
+It may not look like a high ranking now, but the competition was not over when the final project was submitted, and **my code was ranked \#139 at the time**.
